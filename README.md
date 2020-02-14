@@ -50,12 +50,20 @@ This dataset comes from github page containing **Amazon Review Data** created by
 ## 3. Exploratory data analysis<a name="eda"></a>
 To summarize the main characteristics of basic statistcs, such as mean, median, variance, I often make EDA with visual methods, such as histogram for counts, scatter plot for continuous statistics, etc.
 ### 3.1 Distribution histogram over rating
-![alt test](image/Star Rating Distribution.png)
 From the distribution of ratings, it is obviously more 5-star ratings and 4-star ratings than others. There is probably an **imbalanced distribution problem**.
+
+<p align="center">
+ <img src="https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/Star%20Rating%20Distribution.png" width="480">
+</p>
+
+
 
 ### 3.2 Seasonality
 In the context of product review data, it is important to figure out whether there exists seasonality or not. 
 
+![seasonality over year](https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/seasonality%20over%20year.png)
+
+![seasonality over month](https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/seasonality%20over%20month.png)
 ## 4. Predictive task<a name="predictivetask"></a>
 
 - Imbalanced data problem
@@ -67,6 +75,18 @@ Pre-analyzed ratings distribution histogram, count of reviews and average rating
 ## 5. Feature engineering<a name="feature"></a>
 
 ### 5.1 Bag of words: unigram and bigram<a name="bag"></a>
+**Unigrams** without punctuation and stopwords
+<p align="left">
+<img src="https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/unigram-positive.png" width="400">
+<img src="https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/unigram-negative.png" width="400">
+</p>
+
+
+**Unigrams & Bigrams** without punctuation and stopwords
+<p align="left">
+<img src="https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/mixgram-positive.png" width="400">
+<img src="https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/mixgram-negative.png" width="400">
+</p>
 
 ### 5.2 TF-IDF vectorizer<a name="tfidf"></a>
 
