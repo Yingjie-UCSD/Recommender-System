@@ -48,8 +48,18 @@ This dataset comes from github page containing **Amazon Review Data** created by
 - `reviewTime` - time of the review (raw)
 
 ## 3. Exploratory data analysis<a name="eda"></a>
+To summarize the main characteristics of basic statistcs, such as mean, median, variance, I often make EDA with visual methods, such as histogram for counts, scatter plot for continuous statistics, etc.
+### 3.1 Distribution histogram over rating
+![alt test](image/Star Rating Distribution.png)
+From the distribution of ratings, it is obviously more 5-star ratings and 4-star ratings than others. There is probably an **imbalanced distribution problem**.
+
+### 3.2 Seasonality
+In the context of product review data, it is important to figure out whether there exists seasonality or not. 
 
 ## 4. Predictive task<a name="predictivetask"></a>
+
+- Imbalanced data problem
+- (Text Mining) High dimensionality problem
 Pre-analyzed ratings distribution histogram, count of reviews and average rating over month plot.
 
 ### 4.1 Baseline: Latent-factor model<a name="baseline"></a>
