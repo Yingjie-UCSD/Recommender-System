@@ -1,7 +1,10 @@
-# Binary review classification by text mining in Python
+# Binary review classification with text mining 
 ## 1. Introduction
 This is an open-ended project which starts from exploratory data analysis (EDA) of basic statistics and properties, reports findings of interests. Then identify a predictive task that can be studied on this dataset. Define the measurements of model performance at this predictive task and set a baseline model. Next, come up with suitable machine learning models and make optimization. Finally, compare the results and make conclusion.
-* [Dataset](https://github.com/Yingjie-UCSD/Recommender-System#2.-dataset)
+* Dataset
+* [Exploratory Data Analysis](##3.-Exploratory-Data-Analysis)
+
+* [Preductive task](##4.-Preductive-task)
 
 ## 2. Dataset
 This dataset comes from github page containing **Amazon Review Data** created by
