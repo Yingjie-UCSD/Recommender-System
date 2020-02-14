@@ -3,6 +3,17 @@
 This is an open-ended project which starts from exploratory data analysis (EDA) of basic statistics and properties, reports findings of interests. Then identify a predictive task that can be studied on this dataset. Define the measurements of model performance at this predictive task and set a baseline model. Next, come up with suitable machine learning models and make optimization. Finally, compare the results and make conclusion.
 * [Dataset](#dataset)
 * [Exploratory Data Analysis](#eda)
+* [Predictive task](#predictivetask)
+  * [Baseline: Latent-factor model](#baseline)
+* [Feature engineering](#feature)
+  * [Bag of words: unigram and bigram](#bag)
+  * [TF-IDF vectorizer](#tfidf)
+  * [Dimensionality reduction: SVD/LSA](#lsa)
+* [Machine learning models](#ml) 
+  * [Naive Bayes](#bayes)
+  * [Logistic Regression](#lr)
+  * [Random Forest](#rf)
+* [Conclusion](#conclusion)
 
 ## 2. Dataset<a name="dataset"></a>
 This dataset comes from github page containing **Amazon Review Data** created by
@@ -36,28 +47,28 @@ This dataset comes from github page containing **Amazon Review Data** created by
 - `unixReviewTime` - time of the review (unix time)
 - `reviewTime` - time of the review (raw)
 
-## 3. Exploratory data analysis <a name="eda"></a>
+## 3. Exploratory data analysis<a name="eda"></a>
 
-## 4. Preductive task
+## 4. Predictive task<a name="predictivetask"></a>
 Pre-analyzed ratings distribution histogram, count of reviews and average rating over month plot.
 
-### 4.1 Baseline: Latent-factor model
+### 4.1 Baseline: Latent-factor model<a name="baseline"></a>
 
-## 5. Feature engineering
+## 5. Feature engineering<a name="feature"></a>
 
-### 5.1 Bag of words: unigram and bigram
+### 5.1 Bag of words: unigram and bigram<a name="bag"></a>
 
-### 5.2 TF-IDF vectorizer
+### 5.2 TF-IDF vectorizer<a name="tfidf"></a>
 
-### 5.3 Dimensionality reduction: SVD/LSA
+### 5.3 Dimensionality reduction: SVD/LSA<a name="lsa"></a>
 
-## 6 Machine learning models
+## 6 Machine learning models<a name="ml"></a>
 
-### 6.1 Naive Bayes
+### 6.1 Naive Bayes<a name="bayes"></a>
 
-### 6.2 Logistic Regression
+### 6.2 Logistic Regression<a name="lr"></a>
 
-### 6.3 Random Forest
+### 6.3 Random Forest<a name="rf"></a>
 
-## 7 Conclusion
+## 7 Conclusion<a name="conclusion"></a>
 
