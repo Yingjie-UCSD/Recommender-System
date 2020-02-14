@@ -1,12 +1,10 @@
 # Binary review classification with text mining 
 ## 1. Introduction
 This is an open-ended project which starts from exploratory data analysis (EDA) of basic statistics and properties, reports findings of interests. Then identify a predictive task that can be studied on this dataset. Define the measurements of model performance at this predictive task and set a baseline model. Next, come up with suitable machine learning models and make optimization. Finally, compare the results and make conclusion.
-* Dataset
-* [Exploratory Data Analysis](##3.-Exploratory-Data-Analysis)
+* [Dataset](#dataset)
+* [Exploratory Data Analysis](#eda)
 
-* [Preductive task](##4.-Preductive-task)
-
-## 2. Dataset
+## 2. Dataset<a name="dataset"></a>
 This dataset comes from github page containing **Amazon Review Data** created by
 [Jianmo Ni](https://nijianmo.github.io/amazon/index.html). Considering the computation cost and training time, I will simply use the 5-core (77,071 reviews) **Industrial and Scientific** category from **"Small" subsets for experimentation**, which can be found at the lower part of the page. 
 
@@ -38,7 +36,7 @@ This dataset comes from github page containing **Amazon Review Data** created by
 - `unixReviewTime` - time of the review (unix time)
 - `reviewTime` - time of the review (raw)
 
-## 3. Exploratory data analysis 
+## 3. Exploratory data analysis <a name="eda"></a>
 
 ## 4. Preductive task
 Pre-analyzed ratings distribution histogram, count of reviews and average rating over month plot.
@@ -51,9 +49,9 @@ Pre-analyzed ratings distribution histogram, count of reviews and average rating
 
 ### 5.2 TF-IDF vectorizer
 
-### 5.3  Dimensionality reduction: SVD/LSA
+### 5.3 Dimensionality reduction: SVD/LSA
 
-## 6. Machine learning models
+## 6 Machine learning models
 
 ### 6.1 Naive Bayes
 
@@ -61,5 +59,5 @@ Pre-analyzed ratings distribution histogram, count of reviews and average rating
 
 ### 6.3 Random Forest
 
-## 7. Conclusion
+## 7 Conclusion
 
