@@ -59,18 +59,25 @@ From the distribution of ratings, it is obviously more 5-star ratings and 4-star
 
 
 ### 3.2 Seasonality
-In the context of product review data, it is important to figure out whether there exists seasonality or not. 
+In the context of product review data, it is important to figure out whether there exists seasonality or not, which may influence the feature engineering process. 
 
 ![seasonality over year](https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/seasonality%20over%20year.png)
 
 ![seasonality over month](https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/seasonality%20over%20month.png)
 ## 4. Predictive task<a name="predictivetask"></a>
+**Labels** 
+- reviews with rating greater than 4 stars as positive
+- reviews with rating less than 4 stars as negative
 
+**Predictive task:** classify reviews into positive and negative.
+
+**Problems in dataset**
 - Imbalanced data problem
 - (Text Mining) High dimensionality problem
-Pre-analyzed ratings distribution histogram, count of reviews and average rating over month plot.
 
 ### 4.1 Baseline: Latent-factor model<a name="baseline"></a>
+
+
 
 ## 5. Feature engineering<a name="feature"></a>
 
@@ -81,6 +88,13 @@ Pre-analyzed ratings distribution histogram, count of reviews and average rating
 <img src="https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/unigram-negative.png" width="400">
 </p>
 
+* Left figure: 80 most common unigrams in positive reviews.
+* Right figure: 80 most common unigrams in negative reviews.
+
+From these two word cloud, notice that many of the common unigrams are mostly the same. That is probably because people tends to express their dissatisfaction in a less offensive way. For example, in negative reviews, people would like to use ‘not so good’ rather than ‘just so bad’ to express their disappointment, which will means the ungrams model may be inaccurate.
+
+Unigrams lose information on the orders and combinations. Therefore, I tried adding bigrams into bag of words, which is assumed to be a better choice. In the following sections, there will be comparison between the results from unigram model
+and bigram model.
 
 **Unigrams & Bigrams** without punctuation and stopwords
 <p align="left">
@@ -88,9 +102,18 @@ Pre-analyzed ratings distribution histogram, count of reviews and average rating
 <img src="https://github.com/Yingjie-UCSD/Recommender-System/blob/master/image/mixgram-negative.png" width="400">
 </p>
 
-### 5.2 TF-IDF vectorizer<a name="tfidf"></a>
+* Left figure: 80 most common unigrams and bigrams in positive reviews.
+* Right figure: 80 most common unigrams and bigrams in negative reviews.
 
+### 5.2 TF-IDF vectorizer<a name="tfidf"></a>
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+```
 ### 5.3 Dimensionality reduction: SVD/LSA<a name="lsa"></a>
+```python
+from sklearn.decomposition import TruncatedSVD
+```
+Truncated SVD works on term count/tf-idf matrices as returned by the vectorizers in `sklearn.feature_extraction.text`. In that context, it is known as latent semantic analysis (LSA). **[Reference](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html)**
 
 ## 6 Machine learning models<a name="ml"></a>
 
