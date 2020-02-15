@@ -76,8 +76,7 @@ In the context of product review data, it is important to figure out whether the
 - (Text Mining) High dimensionality problem
 
 ### 4.1 Baseline: Latent-factor model<a name="baseline"></a>
-
-
+This model is generally used in recommender system, which is a supervised learning method.
 
 ## 5. Feature engineering<a name="feature"></a>
 
@@ -113,8 +112,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 ```python
 from sklearn.decomposition import TruncatedSVD
 ```
-Truncated SVD works on term count/tf-idf matrices as returned by the vectorizers in `sklearn.feature_extraction.text`. In that context, it is known as latent semantic analysis (LSA). **[Reference](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html)**
-
+Truncated SVD works on term count/tf-idf matrices as returned by the vectorizers in `sklearn.feature_extraction.text`. In that context, it is known as latent semantic analysis ([LSA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html)). 
 ## 6 Machine learning models<a name="ml"></a>
 
 ### 6.1 Naive Bayes<a name="bayes"></a>
@@ -123,5 +121,5 @@ Truncated SVD works on term count/tf-idf matrices as returned by the vectorizers
 
 ### 6.3 Random Forest<a name="rf"></a>
 
-## 7 Conclusion<a name="conclusion"></a>
+## 7. Conclusion<a name="conclusion"></a>
 
